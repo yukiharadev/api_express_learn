@@ -24,13 +24,7 @@ router.get("/", (req, res, next) => {
           };
         }),
       };
-      //if (docs.length >= 0) {
       res.status(200).json(response);
-      //}else{
-      //    res.status(404).json({
-      //        message: "No entríe found",
-      //    });
-      //}
     })
     .catch((err) => {
       console.log(err);
